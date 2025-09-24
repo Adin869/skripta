@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilješke s predavanja Adin Cero</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f7fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff7ecb, #ff5f6d);
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .lesson-info {
+      display: flex;
+      gap: 15px;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .lesson-info span {
+      background: rgba(255,255,255,0.2);
+      padding: 4px 10px;
+      border-radius: 8px;
+    }
+
+    main {
+      padding: 25px;
+    }
+
+    h2 {
+      color: #444;
+      border-left: 4px solid #4a90e2;
+      padding-left: 10px;
+      margin-top: 25px;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 15px 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .note {
+      background: #fff0e6;
+      border-left: 4px solid #ff6b35;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+
+    .tags {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      background: #e6e6fa;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 16px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📓 Bilješke s predavanja</h1>
+      <div class="lesson-info">
+        <span>Lekcija 1</span>
+        <span>5. rujan 2025.</span>
+        <span>⏱ 90 minuta</span>
+      </div>
+    </header>
+    <main>
+      <h2>Što je HTML?</h2>
+      <p>
+        HTML (HyperText Markup Language) je standardni jezik za označavanje koji se koristi za kreiranje web stranica. 
+        HTML opisuje strukturu web stranice koristeći niz elemenata.
+      </p>
+
+      <h2>Osnovna HTML struktura</h2>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="hr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Moja prva stranica&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Dobrodošli!&lt;/h1&gt;
+    &lt;p&gt;Ovo je moj prvi HTML dokument.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h2>Ključni elementi koje smo učili</h2>
+      <ul>
+        <li><code>&lt;html&gt;</code> - glavni kontejner za sve HTML elemente</li>
+        <li><code>&lt;head&gt;</code> - sadrži meta informacije o stranici</li>
+        <li><code>&lt;body&gt;</code> - sadrži vidljivi sadržaj stranice</li>
+        <li><code>&lt;h1&gt; – &lt;h6&gt;</code> - naslovi različitih veličina</li>
+        <li><code>&lt;p&gt;</code> - paragrafi teksta</li>
+      </ul>
+
+      <div class="note">
+        <strong>Važno:</strong> HTML tagovi se uvijek zatvaraju! Svaki otvoreni tag mora imati svoj zatvoreni tag (osim self-closing tagova poput <code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>).
+      </div>
+
+      <div class="tags">
+        <div class="tag">HTML</div>
+        <div class="tag">Struktura</div>
+        <div class="tag">Osnove</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
